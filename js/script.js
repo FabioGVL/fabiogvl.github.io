@@ -5,7 +5,6 @@ const navbar = document.querySelector('header nav');
 const resumeBtns = document.querySelectorAll('.resume-btn');
 const logoLink = document.querySelector('.logo');
 const form = document.getElementById('contact-form');
-console.log(form);
 
 let isTransitioning = false;
 
@@ -91,7 +90,6 @@ resumeBtns.forEach((btn, idx) => {
   });
 });
 
-  console.log(emailjs);
   emailjs.init("3oWcsC7okXw5fEXeO");
 
   form.addEventListener('submit', function(e) {

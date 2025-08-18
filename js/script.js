@@ -91,7 +91,7 @@ resumeBtns.forEach((btn, idx) => {
   });
 });
 
-
+  console.log(emailjs);
   emailjs.init("3oWcsC7okXw5fEXeO");
 
   form.addEventListener('submit', function(e) {

@@ -849,10 +849,7 @@ section.contato {
         gap: 3rem;
     }
 
-    .contact-box .field-box {
-        grid-template-columns: repeat(2, 1fr);
-    }
-     
+
 }
 
 @media screen and (max-width: 600px) {

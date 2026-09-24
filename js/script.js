@@ -11,6 +11,10 @@ let isTransitioning = false;
 menuIcon.addEventListener('click', () => {
   menuIcon.classList.toggle('bx-x');
   navbar.classList.toggle('active');
+
+  const isOpen = navbar.classList.contains('active');
+  menuIcon.setAttribute('aria-expanded', String(isOpen));
+  menuIcon.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
 });
 
 navLinks.forEach((link, idx) => {
@@ -41,6 +45,8 @@ navLinks.forEach((link, idx) => {
 
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
+    menuIcon.setAttribute('aria-expanded', 'false');
+    menuIcon.setAttribute('aria-label', 'Abrir menu');
   });
 });
 
@@ -74,6 +80,8 @@ logoLink.addEventListener('click', (e) => {
     // Fecha o menu se estiver aberto
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
+    menuIcon.setAttribute('aria-expanded', 'false');
+    menuIcon.setAttribute('aria-label', 'Abrir menu');
   }
 });
 

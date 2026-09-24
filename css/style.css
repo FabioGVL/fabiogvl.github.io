@@ -568,7 +568,6 @@ span {
 .portfolio-box img {
     width: 100%;
     transition: .5s ease;
-    padding: 1rem -2rem 2.5rem;
      
 }
 
@@ -730,7 +729,7 @@ section.contato {
   }
   
   .contact-box form {
-    width: 100vw;
+    width: 100%;
     max-width: 1000px;
     background: var(--second-bg-color);
     padding: 3.5rem 2.5rem 2.5rem;

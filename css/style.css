@@ -135,13 +135,13 @@ section {
     display: inline-block;
     color: transparent;
     -webkit-text-stroke: 0.1rem var(--main-color);
-    animation: display-text 28s linear infinite;
+    animation: display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
 
 }
 
 @keyframes display-text {
-    14.28%,100% {
+    25%,100% {
         display: none;
     }
 }
